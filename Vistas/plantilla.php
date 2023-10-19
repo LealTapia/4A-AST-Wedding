@@ -87,7 +87,8 @@
                                     <a href="index.php?pagina=register">Sign up</a>
                                 </li>
                             <?php endif ?>
-                        <?php else: ?>
+                            
+                            <?php else: ?>
                             <?php if($_GET['pagina'] == "home"): ?>
                                 <li class="active">
                                     <a href="index.php?pagina=home">Home</a>
@@ -363,7 +364,7 @@
             ){
                 include "paginas/" . $_GET['pagina'] . ".php";
             } else{
-                include "./paginas/error.php";
+                include "paginas/error.php";
             }
         }else{
             include "paginas/home.php";

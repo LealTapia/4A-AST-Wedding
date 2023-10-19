@@ -4,4 +4,3 @@
             include "Vistas/plantilla.php";
         }
     }
-?>
